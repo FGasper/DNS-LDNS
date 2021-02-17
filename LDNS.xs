@@ -1300,6 +1300,12 @@ ldns_rdf2str(rdf)
 	ALIAS:
 	to_string = 1
 
+const char*
+ldns_rdf_data(rdf)
+	DNS__LDNS__RData rdf;
+	ALIAS:
+	data = 1
+
 void
 print(rdf, fp)
 	DNS__LDNS__RData rdf;
