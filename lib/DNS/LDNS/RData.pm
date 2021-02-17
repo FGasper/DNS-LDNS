@@ -51,6 +51,8 @@ DNS::LDNS::RData - Rdata field or a dname in an rr
   rd->print(\*FILE)
   str = rd->to_string
 
+  binstr = rd->data
+
   count = rd->label_count
   rd2 = rd->label(pos)
 
