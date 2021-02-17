@@ -1300,6 +1300,14 @@ ldns_rdf2str(rdf)
 	ALIAS:
 	to_string = 1
 
+SV*
+data(rdf)
+	DNS__LDNS__RData rdf;
+	CODE:
+		RETVAL = newSVpvn( ldns_rdf_data(rdf), ldns_rdf_size(rdf) );
+	OUTPUT:
+		RETVAL
+
 void
 print(rdf, fp)
 	DNS__LDNS__RData rdf;
